@@ -8,7 +8,7 @@ This is a simple React web application that displays a list of users fetched fro
 4. Clicking on a user's name navigates to a details page showing their name, email, phone number, website, address, and company details.
 
 ## Technologies Used
-React.js
-React Router
-Material-UI (MUI)
-Axios
+1. React.js
+2. React Router
+3. Material-UI (MUI)
+4. Axios
