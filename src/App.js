@@ -33,7 +33,7 @@ function Home() {
     <Container className="container">
       <header>
         <Typography variant="h4" gutterBottom>
-          Users List
+          User List
         </Typography>
       </header>
       <TextField
@@ -93,18 +93,25 @@ function UserDetails() {
       ) : (
         user && (
           <div className="user-details">
-            <Typography variant="h6" gutterBottom>
-              Name: {user.name}
-            </Typography>
-            <Typography variant="body1" gutterBottom>
-              Email: {user.email}
-            </Typography>
-            <Typography variant="body1" gutterBottom>
-              Phone: {user.phone}
-            </Typography>
-            <Typography variant="body1" gutterBottom>
-              Address: {user.address.street}, {user.address.suite}, {user.address.city}, {user.address.zipcode}
-            </Typography>
+          <Typography variant="h6" gutterBottom>
+  Name: {user.name}
+</Typography>
+<Typography variant="body1" gutterBottom>
+  Email: {user.email}
+</Typography>
+<Typography variant="body1" gutterBottom>
+  Phone: {user.phone}
+</Typography>
+<Typography variant="body1" gutterBottom>
+  Website: {user.website}
+</Typography>
+<Typography variant="body1" gutterBottom>
+  Address: {user.address.street}, {user.address.suite}, {user.address.city}, {user.address.zipcode}
+</Typography>
+<Typography variant="body1" gutterBottom>
+  Company: {user.company.name} - {user.company.catchPhrase}
+</Typography>
+
           </div>
         )
       )}
